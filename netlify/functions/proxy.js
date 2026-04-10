@@ -7,7 +7,7 @@ exports.handler = async function(event) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': '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',
+        'x-api-key': process.env.ANTHROPIC_API_KEY,
         'anthropic-version': '2023-06-01'
       },
       body: event.body
